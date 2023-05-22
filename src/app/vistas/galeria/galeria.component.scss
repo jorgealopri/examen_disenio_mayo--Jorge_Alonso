@@ -1,0 +1,54 @@
+@import "../../estilos/colores.scss";
+@import "../../estilos/fuentes.scss";
+
+@media only screen and (max-width:400px){
+
+  .tarjetas{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 60px;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 800px){
+.tarjetas{
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 60px;
+}
+
+}
+
+@media only screen and (min-width:1200px){
+
+.tarjetas{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  column-gap: 100px;
+  row-gap: 60px;
+  padding-top: 10%;
+}
+}
+.tarjeta{
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+  background-color: $primary;
+  mat-card-header{
+    @include TitleFont(30px);
+  }
+  mat-card-content{
+    @include TextFont(14px);
+  }
+  button{
+    background-color: $secondary;
+    &:hover{
+      background-color: $bg-highlight;
+    }
+  }
+}
+.img{
+  width: 300px;
+  height: 200px
+}

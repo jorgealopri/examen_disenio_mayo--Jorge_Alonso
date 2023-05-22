@@ -1,0 +1,16 @@
+@import "../../estilos/colores.scss";
+@import "../../estilos/fuentes.scss";
+
+.i-content{
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+  @include TextFont(15px);
+
+}
+.img{
+  width: 100%;
+}
+

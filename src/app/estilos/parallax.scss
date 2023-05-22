@@ -1,0 +1,28 @@
+$rutaimagen: "../../../assets/CITY-OF-LONDON-STREETS.jpg";
+
+//efecto parallax cada capa que lleve una imagen paralax irá como una clase diferente al que le pasamos el mixin y como parámetro la ruta de la imagen.
+@mixin paralax($rutaimagen){
+  position: relative;
+  background: url($rutaimagen)
+    no-repeat fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 700px;
+}
+
+
+//cada capa con contenido que vaya a hacer scroll sobre las imagenes paralax irá intercalada en una capa con el efecto paralax y llevará la clase content
+
+.paralax-content {
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  padding-top: 2%;
+
+}

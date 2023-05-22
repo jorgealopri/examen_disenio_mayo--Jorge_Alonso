@@ -1,0 +1,20 @@
+<div class="tarjetas">
+<mat-card class="tarjeta" *ngFor="let imagen of monumentos">
+<mat-card-header>
+  <mat-card-title>{{ imagen.nombre }}</mat-card-title>
+</mat-card-header>
+
+  <mat-card-content>
+    <img class="img" srcset="assets/imagenes_examen/{{imagen.imagen}}" />
+    <div>
+      <p>{{imagen.descripcion}}</p>
+    </div>
+  </mat-card-content>
+  <a href="{{imagen.enlace}}">
+    <button mat-flat-button><mat-icon>more</mat-icon></button>
+  </a>
+  <mat-card-actions>
+
+  </mat-card-actions>
+</mat-card>
+</div>

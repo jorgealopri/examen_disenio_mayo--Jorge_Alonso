@@ -1,0 +1,31 @@
+@import "../../estilos/colores.scss";
+@import "../../estilos/fuentes.scss";
+.main{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: $primary;
+  @include MenuFont(24px);
+  & .row-1{
+      display: flex;
+      justify-content: center;
+  }
+
+  & .row-2{
+      display: flex;
+      justify-content: space-between;
+      .h-button{
+
+        background-color: $primary;
+        @include MenuFont(20px);
+        &:hover{
+          background-color: $bg-highlight;
+          color: $buttons;
+        }
+      }
+  }
+}
+

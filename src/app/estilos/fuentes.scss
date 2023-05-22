@@ -1,0 +1,22 @@
+@import "colores";
+$title: "Montserrat";
+$text: "Marriweather";
+$menus: "EB Garamond";
+
+@mixin TitleFont($size){
+  color: $secondary !important;
+  font-size: $size !important;
+  font-family: $title !important;
+}
+
+@mixin TextFont($size){
+  color: $secondary !important;
+  font-size: $size !important;
+  font-family: $text !important;
+}
+
+@mixin MenuFont($size){
+  color: $secondary !important;
+  font-size: $size !important;
+  font-family: $menus !important;
+}

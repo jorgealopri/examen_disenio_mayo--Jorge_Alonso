@@ -1,0 +1,13 @@
+@import "colores";
+@import "fuentes";
+
+
+body{
+  background-color: $background;
+}
+////HEADER////
+@import "../componentes/header/header.component.scss";
+////FOOTER////
+@import "../componentes/footer/footer.component.scss";
+////INICIO////
+
